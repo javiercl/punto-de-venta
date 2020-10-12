@@ -1,9 +1,6 @@
 export class DB {
-  Observable() {
-    throw new Error('Method not implemented.');
-  }
-	
-	constructor(
+
+    constructor(
 		public clientes: Cliente[],
 		public productos: Producto[],
 		public clasificaciones: Clasificacion[],
