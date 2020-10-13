@@ -26,7 +26,7 @@ export class Producto {
 	constructor(
 		public clave: string,
 		public descripcion: string,
-		public clasificacion: Clasificacion,
+		public clasificacion: number,
 		public stock: number,
 		public costo: number,
 		public precio: number,
@@ -46,7 +46,7 @@ export class Venta {
 	constructor(
 		public folio: string,
 		public fecha: string,
-		public cliente: Cliente,
+		public cliente: number,
 		public importe: number,
 	){}
 }
@@ -54,7 +54,7 @@ export class Venta {
 export class VentaDetalle {
 	
 	constructor(
-		public producto: Producto,
+		public producto: number,
 		public cantidad: string,
 		public precio: number,
 		public importe: number,

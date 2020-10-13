@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ClientesRoutingModule } from './clientes-routing.module';
-import { ClientesComponent } from './clientes.component';
+import { ProductosRoutingModule } from './productos-routing.module';
+import { ProductosComponent } from './productos.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
@@ -10,12 +10,11 @@ import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
-  declarations: [ClientesComponent, RegisterComponent, HomeComponent],
+  declarations: [ProductosComponent, RegisterComponent, HomeComponent],
   imports: [
     CommonModule,
-    ClientesRoutingModule,
+    ProductosRoutingModule,
     FormsModule
   ]
-
 })
-export class ClientesModule { }
+export class ProductosModule { }

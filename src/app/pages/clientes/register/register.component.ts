@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Cliente } from 'src/app/models/schemadb';
 import { DbService } from '../../../services/db.service';
@@ -10,7 +9,6 @@ import { DbService } from '../../../services/db.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
   cliente:Cliente;
 
   constructor(
@@ -24,6 +22,7 @@ export class RegisterComponent implements OnInit {
 
 	onSubmit(form){
     this.database.create_cliente(this.cliente);
-    this.router.navigate(['/clientes']);
-	}
+    this.router.navigate(['clientes']);
+  }
+  
 }
